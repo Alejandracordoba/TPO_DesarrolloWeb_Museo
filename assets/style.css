@@ -240,7 +240,15 @@ hr {
         top: 20%;
         left: 0;
         background: #6e7681;
+<<<<<<< Updated upstream
         height: 45%;
+=======
+<<<<<<< HEAD
+        height: 55%;
+=======
+        height: 45%;
+>>>>>>> 6491b23d6e773f2a9b4e664e15e299c2acf4bbb1
+>>>>>>> Stashed changes
         width: 150px;
         padding: 30px;
         opacity: .8;
