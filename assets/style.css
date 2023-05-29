@@ -237,44 +237,31 @@ hr {
     .nav-main ul.nav-menu {
         display: block;
         position: absolute;
-        top: 20%;
+        top: 0;
         left: 0;
         background: #6e7681;
-<<<<<<< Updated upstream
-        height: 45%;
-=======
-<<<<<<< HEAD
-        height: 55%;
-=======
-        height: 45%;
->>>>>>> 6491b23d6e773f2a9b4e664e15e299c2acf4bbb1
->>>>>>> Stashed changes
-        width: 150px;
+        height: 100%;
         padding: 30px;
-        opacity: .8;
-        transform: translateX(-40px);
+        opacity: .9;
+        transform: translateX(-400px);
         transition: transform .5s ease-in-out;
-        
 
     }
-
-    .nav-main ul.nav-menu li {
+    .nav-main ul.nav-menu li{
         padding: 20px;
         border-bottom: #ccc solid 1px;
         font-size: 14px;
     }
-
     .nav-main ul.nav-menu-right {
 
-        margin-right: 40px;
+    margin-right: 40px;
     }
 
-    .nav-main .ul.nav-menu.show {
+    .nav-main ul.nav-menu.show{
 
-        transform: translateX(-40px);
+        transform: translateX(-20px);
     }
-
-    .menu-btn {
+    .menu-btn{
         top: 15px;
     }
 
@@ -297,6 +284,10 @@ hr {
 
         transform: translateX(-20px);
     }
+    .gridnews {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 
 }
 
