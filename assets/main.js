@@ -1,8 +1,7 @@
 
-document.querySelector('.menu-btn').addEventListener('clik', () => {
-    document.querySelector('.nav-menu').classList.toggle('show');
+document.querySelector('.menu-btn').addEventListener('click', () => {
+    document.querySelector('.nav-main ul.nav-menu').classList.toggle('show');
 });
-
 /*Validacion Formulario*/
 
 function validar() {
