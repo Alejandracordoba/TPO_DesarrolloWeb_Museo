@@ -1,2 +1,11 @@
 # TPO_DesarrolloWeb_Museo
  TPO_Grupo9_CaC_DesarrolloWeb_Museo
+Hemos optado por el diseño de una pagina web con un enfoque minimalista que pone énfasis en las imaenes en sí. 
+El fondo negro nos permite crear un ambiente de inmersión, donde los colores y las formas de las obras de arte destacan por sobre manera .
+El diseño se basa en una navegación intuitiva, permitiendo a los visitantes acceder a las diferentes secciones. Hemos utilizado un diseño de cuadrícula ordenada. Un index que tiene 4 paginas enlazadas, y capacidad para poder verse en 3 tipos de resoluciones diferentes; al achicarse a menos de 700 px aparece un boton que conecta El nav que se transforma en una barra lateral, permitiendo al usuario seguir la navegacion por las diferentes páginas. 
+Se trabajó en una misma hoja de estilos y la cual en su mayoria está comentada para guiarnos entre nosotros y ayudar a entender el código fácilmente.
+Como agregado tomamos de logo una similitud a una obra de Mondrian, la misma utilizamos de Favicom.
+En la seccion de "Quiénes somos" dejamos reflejado nuestros perfiles profesionales reales linkeando a nuestros perfiles de Linkedin.
+En la pagina de "Contacto", al formulario colocamos una animacion sencilla pero que a nuestros ojos quedó elegante, haciendo que la barra lateral sufra una transición al posicionarse el cursor sobre ella, así mismo la letra modifique su tamaño y color.
+Realizamos la totalidad del trabajo en conjunto, comunicados constantemente en nuestro grupo de WhatsApp del equipo, en el cuál tomamos las decisiones estéticas principales y de navegación principales, así como también las decisiones sobre los temas a trabajar, siendo que barajamos algunas opciones. Sobre la redacción, elección de imágenes y página de visitas y su diseño se encargó  Ailén Iglesias Barrera, para la responsividad y cambios que provoca la misma y diseño del nav Ignacio Javier Popp, diseño de pagina principal y formulario Alejandra Córdoba, Estilo y grid Michel Andrés Agapito Illescas.
+En si estuvimos trabajando en conjunto para lograr una entrega óptima. Hemos resuelto algunas dificultades con las que nos íbamos enfrentando consultando entre nosotrxs de manera constante para arribar a sus resoluciones.
