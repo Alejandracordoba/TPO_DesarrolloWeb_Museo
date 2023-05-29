@@ -30,7 +30,7 @@ function validar() {
         return false;
     }
     else if (password.length <8) {
-        alert("La contrasela debe tener al menos 8");
+        alert("La contraseña debe tener al menos 8");
         return false;
     }
 }
