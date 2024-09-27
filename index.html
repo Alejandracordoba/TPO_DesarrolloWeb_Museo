@@ -26,7 +26,9 @@
 </head>
 
 <body>
-   
+    <div class="menu-btn" id="menu-btn">
+        <i class ="fas fa-bars  "></i>
+    </div>
     <div class="container">
 
         <nav class="nav-main">
@@ -51,15 +53,6 @@
                     <a href="./assets/html/Tickets.html">Contacto</a>
                 </li>
             </ul>
-
-            <!-- <ul>
-                <li class="nav menu-right">
-                    <a href="">
-                        <i class="fas fa-search"></i>
-                    </a>
-                </li>
-            </ul> -->
-
         </nav>
         <br>
         <hr>
@@ -106,6 +99,10 @@
 
         </div>
 
+        <br></br>
+        <br></br>
+        <br></br>
+
         <section class="movimiento">
             <div class="content">
                 <h2>Mujeres artistas en la colección del Museo</h2>
@@ -114,7 +111,84 @@
                 <a href="/assets/html/mujeres.html" class="btn" >Ver más <i  class="fa fa-angle-double-right "> </i></a>
             </div>
         </section>
-
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <section class="secciontragos">
+            <h1>Arte y Tragos</h1>
+            <p>Buscá el trago que más te inspire para realizar en tu casa, poné en el buscador el trago o alguno de sus ingredientes
+                y te brindaremos ideas sobre los que podés realizar.</p>
+            <br><br><br>
+                <head>
+                <title>Buscador de Tragos</title>
+            
+              </head>
+              <body>
+                <h1>Buscador de Tragos</h1>
+                
+                <input type="text" id="search" placeholder="Buscar tragos..."><button id="buscar"> Buscar</button>
+                <div id="results">
+                  
+                </div>
+                
+               <script>
+                    let searchText = document.getElementById("buscar")
+            
+                    const cleaner = (parentId)=>{
+                    let childs = document.querySelectorAll(`#${parentId} > *`);
+                    childs.forEach(e => e.remove())
+                    }
+            
+                    const inyector = (data , parentId)=>{
+                    
+                    cleaner(parentId)
+                    
+                    if (!data.drinks){
+                        let h1 = document.createElement("h4")
+                        h1.innerText = "No Data"
+                        document.getElementById(parentId).appendChild(h1)
+                        return 
+                    }
+                    
+                    /*manera simple y rapido*/
+                    data.drinks.forEach(drink =>{
+                    let div = document.createElement("div")
+                    div.innerHTML = `
+                    <h2>${drink.strDrink}</h2>
+                    <p>${drink.strInstructions}</p>
+                    `
+                    document.getElementById(parentId).appendChild(div)
+                    })
+                    
+            
+                    
+                    }
+            
+                    searchText.addEventListener("click", () =>{
+                    let input = document.getElementById("search")
+                    let data = input.value
+                    input.value = ""
+                    
+                    /*busqueda*/
+                    
+                    let ApiQuery = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${data}`
+                    
+                    fetch(ApiQuery)
+                    .then(data => data.json())
+                    .then(data => inyector(data,"results"))
+                    .catch(e => console.log(e))
+                    
+                    } )
+             
+                </script>
+            </body>
+            </html>
+        </section>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <section class="social">
             <p>Seguinos en nuestras redes</p>
             <div class="links">
@@ -137,13 +211,7 @@
 
         </footer>
 
-
-
-
-
     </div>
-
-    <script src="/assets/main.js"></script>
 </body>
 
 </html>
